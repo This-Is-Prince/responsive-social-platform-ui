@@ -4,9 +4,479 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Social Platform UI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body>
-    <h1>Hello</h1>
+  <body
+    style="visibility: hidden"
+    onload="document.body.style.visibility='visible'"
+  >
+    <main class="app">
+      <aside class="app__left">
+        <article class="menu__bar">
+          <div class="wrapper flex-center">
+            <button class="menu__bar-open__btn btn flex-center">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+          <h5 class="menu__bar-title menu__title flex-center">Connect</h5>
+        </article>
+        <!-- Menu tab -->
+        <article class="menu__tab">
+          <section class="menu-title-section">
+            <div class="wrapper flex-center">
+              <button class="menu__tab-close__btn btn flex-center">
+                <i class="fa fa-arrow-left"></i>
+              </button>
+            </div>
+            <h5 class="menu__tab-title menu__title">Connect</h5>
+          </section>
+          <section class="menu-section">
+            <p class="section-title">Menu</p>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">
+                  <span class="menu__item-icon">
+                    <i class="fa fa-home"></i>
+                  </span>
+                  <span class="menu__item-title"> Home </span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">
+                  <span class="menu__item-icon">
+                    <i class="fa fa-book-open"></i>
+                  </span>
+                  <span class="menu__item-title"> Latest News </span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">
+                  <span class="menu__item-icon">
+                    <i class="fa fa-map-marker-alt"></i>
+                  </span>
+                  <span class="menu__item-title"> Explore </span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">
+                  <span class="menu__item-icon">
+                    <i class="far fa-file-alt"></i>
+                  </span>
+                  <span class="menu__item-title"> Files </span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">
+                  <span class="menu__item-icon">
+                    <i class="far fa-images"></i>
+                  </span>
+                  <span class="menu__item-title"> Gallery </span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">
+                  <span class="menu__item-icon">
+                    <i class="far fa-calendar-alt"></i>
+                  </span>
+                  <span class="menu__item-title"> Events </span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="favorite-section">
+            <p class="section-title">Favorite</p>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">
+                  <span class="menu__item-icon"> 🌳 </span>
+                  <span class="menu__item-title"> Foresto </span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">
+                  <span class="menu__item-icon"> 🦅 </span>
+                  <span class="menu__item-title"> Birds </span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">
+                  <span class="menu__item-icon"> 🌻 </span>
+                  <span class="menu__item-title"> Nature </span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">
+                  <span class="menu__item-icon"> 🐶 </span>
+                  <span class="menu__item-title"> Animals </span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">
+                  <span class="menu__item-icon"> 🛵 </span>
+                  <span class="menu__item-title"> Motobike </span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">
+                  <span class="menu__item-icon"> 🎉 </span>
+                  <span class="menu__item-title"> Dance </span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </aside>
+      <section class="app__middle">
+        <article class="search-container">
+          <div class="search-bar-container">
+            <input type="text" placeholder="Search" class="search__bar" />
+            <button class="btn search__btn">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+          <button class="account-menu-open-btn btn account-show">
+            <i class="far fa-comment-alt"></i>
+          </button>
+        </article>
+        <article class="middle-container">
+          <section class="profile-container">
+            <div class="profile-bg">
+              <section class="hero-container">
+                <img
+                  src="./assets/images/profile.png"
+                  alt="profile photo"
+                  class="hero-img"
+                />
+                <!-- <h4 class="hero-title">Prince</h4> -->
+              </section>
+            </div>
+            <ul class="profile-links-list">
+              <li class="profile-item">
+                <a href="#" class="profile-link active">Timeline</a>
+              </li>
+              <li class="profile-item">
+                <a href="#" class="profile-link">About</a>
+              </li>
+              <li class="profile-item">
+                <a href="#" class="profile-link">Friends</a>
+              </li>
+              <li class="profile-item">
+                <a href="#" class="profile-link">Photos</a>
+              </li>
+              <li class="profile-item">
+                <a href="#" class="profile-link">More</a>
+              </li>
+            </ul>
+          </section>
+          <section class="info-container">
+            <article class="gallery-container">
+              <ul class="gallery-links-list">
+                <li class="gallery-item">
+                  <a href="#" class="gallery-link active-gallery-link">
+                    Status
+                  </a>
+                </li>
+                <li class="gallery-item">
+                  <a href="#" class="gallery-link"> Photos </a>
+                </li>
+                <li class="gallery-item">
+                  <a href="#" class="gallery-link"> Videos </a>
+                </li>
+              </ul>
+              <div class="msg-container">
+                <img
+                  class="profile-img"
+                  src="./assets/images/profile.png"
+                  alt="msg-photo"
+                />
+
+                <textarea
+                  class="msg-text"
+                  placeholder="Write something to Prince.."
+                ></textarea>
+              </div>
+              <div class="underline"></div>
+              <ul class="gallery-btn-list">
+                <li class="gallery-btn-item">
+                  <a href="#" class="gallery-btn-link"> 🙍‍♂️ </a>
+                </li>
+                <li class="gallery-btn-item">
+                  <a href="#" class="gallery-btn-link"> 📌 </a>
+                </li>
+                <li class="gallery-btn-item">
+                  <a href="#" class="gallery-btn-link"> 😄 </a>
+                </li>
+                <li class="gallery-btn-item">
+                  <button class="btn gallery-share-btn">Share</button>
+                </li>
+              </ul>
+            </article>
+            <article class="post-container pages-container">
+              <header class="post-header">
+                <img
+                  src="./assets/images/profile.png"
+                  alt="post profile"
+                  class="profile-img"
+                />
+                <div class="post-header-title">
+                  <p>
+                    <span class="post-name">Prince</span>
+                    <span class="post-create">create new</span>
+                    <a href="#" class="post-link">album</a>
+                  </p>
+                  <p class="post-time">6 hours ago</p>
+                </div>
+                <button class="btn post-btn page-btn">
+                  <i class="fa fa-ellipsis-h"></i>
+                </button>
+              </header>
+              <p class="post-info">Quote of the day.</p>
+              <div class="post-img-container">
+                <img src="./assets/images/bg.jpg" alt="post-img" />
+              </div>
+              <div class="post-response"></div>
+            </article>
+            <article class="pages-container">
+              <div class="pages-titles">
+                <p class="page-title">Introduction</p>
+                <button class="btn page-btn">
+                  <i class="fa fa-ellipsis-h"></i>
+                </button>
+              </div>
+              <ul class="intro-list">
+                <li class="intro-item">
+                  <span class="intro-icon">
+                    <i class="fa fa-suitcase"></i>
+                  </span>
+                  <span class="intro-title">Software Engineer at</span>
+                  <a href="#" class="intro-link">Home</a>
+                </li>
+                <li class="intro-item">
+                  <span class="intro-icon">
+                    <i class="fa fa-home"></i>
+                  </span>
+                  <span class="intro-title">Live in</span>
+                  <a href="#" class="intro-link">Punjab, India</a>
+                </li>
+                <li class="intro-item">
+                  <span class="intro-icon">
+                    <i class="fa fa-basketball-ball"></i>
+                  </span>
+                  <span class="intro-title">Player name</span>
+                  <a href="#" class="intro-link">Prince</a>
+                </li>
+              </ul>
+            </article>
+            <article class="pages-container">
+              <div class="pages-titles">
+                <p class="page-title">Your Pages</p>
+                <button class="btn page-btn">
+                  <i class="fa fa-ellipsis-h"></i>
+                </button>
+              </div>
+              <ul class="page-list">
+                <li class="page-item">
+                  <img
+                    src="./assets/images/army-of-dead.jfif"
+                    alt="page-img-1"
+                    class="profile-img"
+                  />
+                  <p class="page-img-title">Army of dead</p>
+                </li>
+                <li class="page-item">
+                  <img
+                    src="./assets/images/backend.png"
+                    alt="page-img-1"
+                    class="profile-img"
+                  />
+                  <p class="page-img-title">Backend</p>
+                </li>
+                <li class="page-item">
+                  <img
+                    src="./assets/images/front-end.png"
+                    alt="page-img-1"
+                    class="profile-img"
+                  />
+                  <p class="page-img-title">Frontend</p>
+                </li>
+                <li class="page-item">
+                  <img
+                    src="./assets/images/social-media.jfif"
+                    alt="page-img-1"
+                    class="profile-img"
+                  />
+                  <p class="page-img-title">Social Media</p>
+                </li>
+              </ul>
+            </article>
+          </section>
+        </article>
+      </section>
+      <section class="app__right">
+        <header class="app__right-header">
+          <a href="#" class="msg-btn">
+            <i class="far fa-envelope"></i>
+          </a>
+          <a href="#" class="notification-btn">
+            <i class="far fa-bell"></i>
+          </a>
+          <a href="#" class="profile-btn">
+            <span>Prince</span> <img src="./assets/images/profile.png" alt="" />
+            <span>
+              <i class="fa fa-sort-down"></i>
+            </span>
+          </a>
+        </header>
+        <div class="underline"></div>
+        <article class="stories-section">
+          <p class="page-title">STORIES</p>
+          <ul class="stories-list">
+            <li class="story">
+              <a href="#" class="story-link">
+                <img
+                  src="./assets/images/ethen.jfif"
+                  alt=""
+                  class="profile-img"
+                />
+                <span class="story-info">
+                  <span class="story-title"> Ethen </span>
+                  <span class="story-time"> 12 hours ago </span>
+                </span>
+              </a>
+            </li>
+            <li class="story">
+              <a href="#" class="story-link">
+                <img
+                  src="./assets/images/jorah.jfif"
+                  alt=""
+                  class="profile-img"
+                />
+                <span class="story-info">
+                  <span class="story-title"> Jorah </span>
+                  <span class="story-time"> 29 minutes ago </span>
+                </span>
+              </a>
+            </li>
+            <li class="story">
+              <a href="#" class="story-link">
+                <img
+                  src="./assets/images/khaleesi.jfif"
+                  alt=""
+                  class="profile-img"
+                />
+                <span class="story-info">
+                  <span class="story-title"> Khaleesi </span>
+                  <span class="story-time"> 3 hours ago </span>
+                </span>
+              </a>
+            </li>
+            <li class="story">
+              <a href="#" class="story-link">
+                <img
+                  src="./assets/images/tywin.jfif"
+                  alt=""
+                  class="profile-img"
+                />
+                <span class="story-info">
+                  <span class="story-title"> Tywin </span>
+                  <span class="story-time"> 18 hours ago </span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </article>
+        <div class="underline"></div>
+        <article class="stories-section">
+          <p class="page-title">CONTACTS</p>
+          <ul class="stories-list">
+            <li class="story">
+              <a href="#" class="story-link contact-link">
+                <img
+                  src="./assets/images/night-king.jfif"
+                  alt=""
+                  class="profile-img"
+                />
+                <span class="story-title"> Night King </span>
+                <span class="story-icon contact-active"></span>
+              </a>
+            </li>
+            <li class="story">
+              <a href="#" class="story-link contact-link">
+                <img
+                  src="./assets/images/sansa.jfif"
+                  alt=""
+                  class="profile-img"
+                />
+                <span class="story-title"> Sansa Stark</span>
+                <span class="story-icon contact-active"></span>
+              </a>
+            </li>
+            <li class="story">
+              <a href="#" class="story-link contact-link">
+                <img
+                  src="./assets/images/arya.jfif"
+                  alt=""
+                  class="profile-img"
+                />
+                <span class="story-title"> Arya Stark </span>
+                <span class="story-icon contact-active"></span>
+              </a>
+            </li>
+            <li class="story">
+              <a href="#" class="story-link contact-link">
+                <img
+                  src="./assets/images/drogon.jfif"
+                  alt=""
+                  class="profile-img"
+                />
+                <span class="story-title"> Drogon </span>
+                <span class="story-icon"></span>
+              </a>
+            </li>
+
+            <li class="story">
+              <a href="#" class="story-link contact-link">
+                <img
+                  src="./assets/images/daario.jfif"
+                  alt=""
+                  class="profile-img"
+                />
+                <span class="story-title"> Daario </span>
+                <span class="story-icon contact-active"></span>
+              </a>
+            </li>
+            <li class="story">
+              <a href="#" class="story-link contact-link">
+                <img
+                  src="./assets/images/jon.jfif"
+                  alt=""
+                  class="profile-img"
+                />
+                <span class="story-title"> Jon Snow </span>
+                <span class="story-icon contact-active"></span>
+              </a>
+            </li>
+            <li class="story">
+              <a href="#" class="story-link contact-link">
+                <img
+                  src="./assets/images/ramsay.jfif"
+                  alt=""
+                  class="profile-img"
+                />
+                <span class="story-title"> Ramsay Bolton </span>
+                <span class="story-icon"></span>
+              </a>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

@@ -8,5 +8,8 @@
   },
   "devDependencies": {
     "vite": "^2.5.4"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
